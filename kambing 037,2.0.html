@@ -1,0 +1,135 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maklumat Kambing: 057</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        section {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            background: #e8f5e9;
+            border-radius: 5px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        form {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Maklumat Ternakan Kambing: 037
+    </header>
+    <main>
+        <section>
+            <h2>No Tag: 037</h2>
+            <p>Kambing ini memiliki No Tag <strong>037</strong> sebagai penanda unik untuk identifikasi di sistem ternakan unit ruminan KVLD.</p>
+        </section>
+        <section>
+            <h2>Berat: 30 KG</h2>
+            <p>Berat kambing ini diambil pada November 2024.</p>
+        </section>
+        <section>
+            <h2>Jantina: Betina</h2>
+            <p>Kambing ini adalah <strong>Betina</strong>.</p>
+        </section>
+        <section>
+            <h2>Baka: Boer</h2>
+            <p>Kambing ini berasal dari baka <strong>Boer</strong>.</p>
+        </section>
+        <section>
+            <h2>Kesihatan: Sihat</h2>
+            <p>Status kesihatan kambing ini adalah <strong>sihat</strong>. Ia menerima vaksinasi rutin dan sentiasa dalam pemantauan kesihatan.</p>
+        </section>
+        <h2>Hantar Maklumat Baru</h2>
+        <form action="https://formspree.io/f/xovjpobq" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="id">No ID Ternakan:</label>
+            <input type="text" id="id" name="id" readonly>
+            
+            <label for="date">Tarikh:</label>
+            <input type="date" id="date" name="date" readonly>
+            
+            <label for="message">Maklumat:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Hantar Maklumat</button>
+        </form>
+    </main>
+    <footer>
+        2025 Unit Ruminan KVLD - Semua Maklumat Dilindungi @iqmmal_f
+    </footer>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const ternakanID = urlParams.get('id') || '037'; 
+        document.getElementById('id').value = ternakanID;
+
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').value = today;
+    </script>
+</body>
+</html>
